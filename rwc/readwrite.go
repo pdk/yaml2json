@@ -100,8 +100,8 @@ func toString(v interface{}) string {
 		return fmt.Sprintf("%t", v)
 	}
 
-	s, ok2 := v.(stringer)
-	if ok2 {
+	s, ok := v.(stringer)
+	if ok {
 		return s.String()
 	}
 
