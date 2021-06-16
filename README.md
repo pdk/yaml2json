@@ -4,7 +4,7 @@ Converts YAML input to JSON output.
 
 Install:
 
-    go get -u github.com/pdk/yaml2json
+    go get github.com/pdk/yaml2json@latest
 
 usage:
 
