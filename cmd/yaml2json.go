@@ -1,5 +1,4 @@
-// Read stdin expecting a yaml file, and write data as JSON on stdout.
-
+// Read stdin expecting a yaml file, and rewrite as json to stdout.
 package main
 
 import (
