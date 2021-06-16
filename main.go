@@ -5,17 +5,17 @@ import (
 	"log"
 	"os"
 
-	"github.com/pdk/yaml2json"
+	"github.com/pdk/yaml2json/rwc"
 )
 
 func main() {
 
-	t, err := yaml2json.ReadYAML(os.Stdin)
+	t, err := rwc.ReadYAML(os.Stdin)
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
 
-	err = yaml2json.PrintJSON(os.Stdout, t)
+	err = rwc.PrintJSON(os.Stdout, t)
 	if err != nil {
 		log.Fatalf("%v", err)
 	}

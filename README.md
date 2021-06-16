@@ -2,7 +2,11 @@
 
 Converts YAML input to JSON output.
 
-e.g.:
+Install:
+
+    go get -u github.com/pdk/yaml2json
+
+usage:
 
     $ cat sample/foobar.yaml
     a: apple
@@ -11,7 +15,7 @@ e.g.:
     - foo
     - bar
 
-    $ go run cmd/yaml2json.go < sample/foobar.yaml
+    $ yaml2json < sample/foobar.yaml
     {
         "a": "apple",
         "b": "bat",

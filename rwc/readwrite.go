@@ -1,6 +1,4 @@
-// Read stdin expecting a yaml file, and write data as JSON on stdout.
-
-package yaml2json
+package rwc
 
 import (
 	"encoding/json"
